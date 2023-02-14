@@ -51,22 +51,12 @@ export default class View {
     if (!data || (Array.isArray(data) && data.length == 0))
       return this.renderError();
 
-    console.log('03..View.js');
     this._data = data;
-
-    console.log('04..View.js');
-
     const markup = this._generateMarkup();
-
-    debugger;
-    console.log('06..View.js');
 
     if (!render) return markup;
 
     this._clearParent();
-
-    console.log('07..View.js');
-
     this._parentElement.innerHTML = markup;
   }
 
