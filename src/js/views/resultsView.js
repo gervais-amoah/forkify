@@ -7,10 +7,6 @@ class ResultsView extends View {
   _messageError = '😐 No recipe found for your search term.';
 
   _generateMarkup() {
-    console.log('ResultsView => ', this._data);
-
-    console.log('05..ResultsView.js');
-
     return this._data
       ?.map(resultRecipe => previewView.render(resultRecipe, false))
       .join('');

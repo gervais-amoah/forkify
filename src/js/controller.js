@@ -34,7 +34,6 @@ const controlRecipes = async function () {
     recipeView.render(state.recipe);
   } catch (error) {
     // alert('Error while showing the recipe, from the controller');
-    console.log('CONTROLLER TRY CATCH ERR', error);
     recipeView.renderError();
     console.error(error);
   }
@@ -42,7 +41,6 @@ const controlRecipes = async function () {
 
 // SEARCH CONTROL
 const controlSearchResults = async function () {
-  console.log('ahem...');
   try {
     resultsView.renderSpinner();
     //  Get search query
@@ -89,11 +87,9 @@ function controlAddBookmark() {
     addBookmark(state.recipe);
   }
 
-  console.log('01');
   // Update recipe view
   recipeView.updateChanges(state.recipe);
 
-  console.log('02');
   // Render bookmarks
   bookmarksView.render(state.bookmarks);
 }

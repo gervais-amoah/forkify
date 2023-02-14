@@ -77,8 +77,6 @@ export const getSearchResultsPage = function (page = state.search.page) {
 };
 
 export function updateServings(newServings) {
-  console.log(newServings);
-
   state.recipe.ingredients.forEach(ing => {
     ing.quantity = (ing.quantity * newServings) / state.recipe.servings;
   });
@@ -148,8 +146,6 @@ export async function uploadRecipe(newRecipe) {
       cooking_time: +newRecipe.cookingTime,
       ingredients: ingredients,
     };
-
-    console.log(recipe);
 
     const data = await AJAX(`${API_URL}?key=${API_KEY}`, recipe);
     state.recipe = convertRecipeDataToObject(data);
