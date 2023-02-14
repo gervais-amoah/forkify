@@ -1,0 +1,15 @@
+{
+  "name": "forkify",
+  "version": "1.0.0",
+  "description": "Recipe web application build using HTML, CSS (SASS) & JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Gervais Yao Amoah",
+  "license": "ISC",
+  "dependencies": {
+    "fraction-parser": "^1.0.6"
+  }
+}
