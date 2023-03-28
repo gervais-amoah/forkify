@@ -12,6 +12,13 @@
   z-index: 1000;
   transition: all 0.5s;
 
+  @media (max-width: $bp-medium) {
+    width: calc(100% - 4rem);
+    max-height: calc(100% - 2rem);
+    padding: 2.5rem 3.5rem;
+    overflow: scroll;
+  }
+
   .btn--close-modal {
     font-family: inherit;
     color: inherit;
