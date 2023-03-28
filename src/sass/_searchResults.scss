@@ -2,16 +2,27 @@
   padding: 3rem 0;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $bp-medium) {
+    padding: 0;
+  }
 }
 
 .results {
   list-style: none;
   margin-bottom: 2rem;
+
+  @media (max-width: $bp-medium) {
+    margin-bottom: 0;
+  }
 }
 
 .pagination {
   margin-top: auto;
   padding: 0 3.5rem;
+  @media (max-width: $bp-medium) {
+    margin-top: 4rem;
+  }
 
   &::after {
     content: '';
@@ -33,7 +44,12 @@
   color: $color-grey-dark-2;
   font-size: 1.2rem;
   padding: 0 3.5rem;
-  margin-top: 4rem;
+  margin-top: auto;
+  margin-bottom: 2rem;
+
+  @media (max-width: $bp-medium) {
+    padding: 0 2rem;
+  }
 
   .twitter-link:link,
   .twitter-link:visited {
