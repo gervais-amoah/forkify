@@ -9,6 +9,9 @@
     margin-left: 4rem;
     height: 4.6rem;
     display: block;
+    @media (max-width: $bp-medium) {
+      margin-left: 2rem;
+    }
   }
 }
 
@@ -23,6 +26,10 @@
   &:focus-within {
     transform: translateY(-2px);
     box-shadow: 0 0.7rem 3rem rgba($color-grey-dark-1, 0.08);
+  }
+
+  @media (max-width: $bp-medium) {
+    padding-left: 1.5rem;
   }
 
   &__field {
@@ -59,6 +66,9 @@
 .nav {
   align-self: stretch;
   margin-right: 2.5rem;
+  @media (max-width: $bp-medium) {
+    margin-right: 1rem;
+  }
 
   &__list {
     list-style: none;
