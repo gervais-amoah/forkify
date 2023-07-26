@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Create a new branch called "gh-pages" and switch to it
+git checkout -b gh-pages
+
+# Add and commit your changes
+git add .
+git commit -m "Deploy website to GitHub Pages"
+
+# Push the changes to the new branch
+git push origin gh-pages
+
+# Switch back to your main branch
+git checkout main
